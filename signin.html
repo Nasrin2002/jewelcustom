@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and sign in form</title>
+    <link rel="stylesheet" href="signin_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"> </div>
+                <button type="button" class="toggle-btn"  onclick="login()"> LOG IN </button>
+                <button type="button" class="toggle-btn"  onclick="signin()"> SIGN IN </button>
+            </div>
+            <div class="social-icons">
+               <img src="./instagram.png">
+               <img src="./whatsapp.png">
+               <img src="./facebook.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter user id" required>
+                <input type="password" class="input-field" placeholder="Enter password id" required>
+                <input type="checkbox" class="check-box"><span> Remember password </span> 
+                <button class="submit-btn"><a href="./jewel.html">Login</a></button>
+            </form>
+            <form id="signin" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter user id" required>
+                <input type="email" class="input-field" placeholder="Enter email id" required>
+                <input type="password" class="input-field" placeholder="Enter password id" required>
+                <input type="password" class="input-field" placeholder="Confirm password id" required>
+                <input type="checkbox" class="check-box"><span>I agree terms and conditions. </span> 
+                <button class="submit-btn"><a href="./jewel.html">signin</a></button>
+            </form>
+        </div>
+    </div>
+    <script>  
+        var x=document.getElementById("login");
+        var y=document.getElementById("signin");
+        var z=document.getElementById("btn");
+
+        function signin(){
+            x.style.left="-450px";
+            y.style.left="50px";
+            z.style.left="110px";
+
+        }       
+
+        
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }       
+
+
+    </script>
+</body>
+</html>
